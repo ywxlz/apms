@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC 
+	"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+	"http://struts.apache.org/dtds/struts-2.0.dtd">
+	<struts>
+		<constant name="struts.ui.theme" value="simple" />
+		<constant name="struts.i18n.encoding" value="UTF-8" />
+		<constant name="struts.i18n.reload" value="true" />
+		<constant name="struts.action.excludePattern" value="/static/.*?" />
+		
+		<!-- 用户注册和登陆 -->
+		<package name="userPackage" extends="struts-default" namespace="/">
+			<!-- 登陆 -->
+			<action name="loginAction" class="UserAction" method="login">
+				<result name="login">loginSuccess.jsp</result>
+				<result name="loginFailed">/loginFailed.jsp</result>
+			</action>
+			
+			<!-- 注册 -->
+			<action name="registerAction" class="UserAction" method="register">
+				<result name="register">../registerSuccess.jsp</result>
+				<result name="failed">../registerFailed.jsp</result>
+			</action>
+			
+			<!-- 注销 -->
+			<action name="logoutAction" class="UserAction" method="logout">
+				<result name="logout">login/loginSuccess.jsp</result>
+			</action>
+		</package>
+		
+		<!-- 功能  -->
+		<package name="functionPackage" extends="struts-default" namespace="/">
+			<action name="queryAction" class="AllFunctionAction" method="query">
+				<result name="query"></result>
+			</action>
+		</package>
+		
+		<!-- 通讯业务  -->
+		<package name="comRequestPackage" extends="struts-default" namespace="/">
+			<action name="queryAction" class="ComRequestAction" method="query">
+				<result name="query"></result>
+			</action>
+		</package>
+		
+		<!-- 部门  -->
+		<package name="deptPackage" extends="struts-default" namespace="/">
+			<action name="queryAction" class="DeptAction" method="query">
+				<!-- 不要被名字迷惑 这其实是博客 -->
+				<result name="query"></result>
+			</action>
+		</package>
+		
+		<!-- 邮件申请单  -->
+		<package name="emailRequestPackage" extends="struts-default" namespace="/">
+			<action name="queryAction" class="EmailRequestAction" method="query">
+				<result name="query"></result>
+			</action>
+		</package>
+		
+		<!-- 功能类型  -->
+		<package name="functionTypePackage" extends="struts-default" namespace="/">
+			<action name="queryAction" class="FunctionTypeAction" method="query">
+				<result name="query"></result>
+			</action>
+		</package>
+		
+		<!-- ip申请单  -->
+		<package name="ipRequestPackage" extends="struts-default" namespace="/">
+			<action name="queryAction" class="IPRequestAction" method="query">
+				<result name="query"></result>
+			</action>
+		</package>
+		
+		<!-- 日志  -->
+		<package name="LogPackage" extends="struts-default" namespace="/">
+			<action name="queryAction" class="LogAction" method="query">
+				<result name="query"></result>
+			</action>
+		</package>
+		
+		<!-- 其他申请单  -->
+		<package name="otherRequestPackage" extends="struts-default" namespace="/">
+			<action name="queryAction" class="OtherRequestAction" method="query">
+				<result name="query"></result>
+			</action>
+		</package>
+		
+		<!-- 电话会议申请单  -->
+		<package name="phoneRequestPackage" extends="struts-default" namespace="/">
+			<action name="queryAction" class="PhoneRequestAction" method="query">
+				<result name="query"></result>
+			</action>
+		</package>
+		
+		<!-- 申请单  -->
+		<package name="RequestPackage" extends="struts-default" namespace="/">
+			<action name="queryAction" class="RequestAction" method="query">
+				<result name="query"></result>
+			</action>
+		</package>
+		
+		<!-- 角色  -->
+		<package name="rolePackage" extends="struts-default" namespace="/">
+			<action name="queryAction" class="RoleAction" method="query">
+				<result name="query"></result>
+			</action>
+		</package>
+		
+		<!-- 存储空间申请单  -->
+		<package name="spaceRequestPackage" extends="struts-default" namespace="/">
+			<action name="queryAction" class="SpaceRequestAction" method="query">
+				<result name="query"></result>
+			</action>
+		</package>
+		
+	</struts>
