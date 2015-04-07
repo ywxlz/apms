@@ -97,6 +97,10 @@ $(window).load(function(){
 					   'winWidth':930,
 					   'winHeight':500
 						},
+					
+					/**
+					 *	申请单开始
+					 */
 					'ipRequest':{
 					   'title':'IP 申请单',
 					   'url':'request/ipRequest.jsp',
@@ -116,20 +120,20 @@ $(window).load(function(){
 					   'winHeight':500
 						},
 					'phoneRequest':{
-						'title':'Space 申请单',
+						'title':'Phone Meeting 申请单',
 					   'url':'request/phoneRequest.jsp',
 					   'winWidth':930,
 					   'winHeight':500
 						},
-					'qingshu':{
-						'title':'情书',
-					   'url':'http://www.qingshu8.net/',
+					'comRequest':{
+						'title':'Communications business 申请单',
+					   'url':'request/comRequest.jsp',
 					   'winWidth':930,
 					   'winHeight':500
 						},
-					'fenghuang':{
-						'title':'凤凰网',
-					   'url':'http://www.ifeng.com/',
+					'otherRequest':{
+						'title':'Other 申请单',
+					   'url':'request/otherRequest.jsp',
 					   'winWidth':930,
 					   'winHeight':500
 						},	
@@ -262,10 +266,8 @@ $(window).load(function(){
 			<li class="desktop_icon" id="emailRequest"><span class="icon"><img src="icon/icon12.png"/></span><div class="text">邮件申请单<s></s></div></li>
 			<li class="desktop_icon" id="spaceRequest"><span class="icon"><img src="icon/icon12.png"/></span><div class="text">空间申请单<s></s></div></li>
 			<li class="desktop_icon" id="phoneRequest"><span class="icon"><img src="icon/icon14.png"/></span><div class="text">会议申请单<s></s></div></li>
-			<li class="desktop_icon" id="qingshu"><span class="icon"><img src="icon/icon15.png"/></span><div class="text">情书<s></s></div></li>
-			<li class="desktop_icon" id="fenghuang"><span class="icon"><img src="icon/icon16.png"/></span><div class="text">凤凰网<s></s></div></li>
-			<li class="desktop_icon" id="zhongguancun"><span class="icon"><img src="icon/icon17.png"/></span><div class="text">中关村在线<s></s></div></li>
-			<li class="desktop_icon add_icon"><span class="icon"><img src="images/add_icon.png"/></span><div class="text">添加<s></s></div></li>
+			<li class="desktop_icon" id="comRequest"><span class="icon"><img src="icon/icon15.png"/></span><div class="text">通讯申请单<s></s></div></li>
+			<li class="desktop_icon" id="otherRequest"><span class="icon"><img src="icon/icon16.png"/></span><div class="text">其它申请单<s></s></div></li>
 		</ul>
 		<!-- 第三页 -->
 		<ul class="deskIcon">
